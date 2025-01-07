@@ -25,10 +25,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Set Up Virtual Machines
+
+Create two Azure VMs (Windows and Ubuntu) in the same virtual network for testing network protocols.
+- Configure Network Security Groups (NSGs)
+
+Set up NSG rules to control inbound and outbound traffic for each VM, specifying protocols and ports.
+- Capture and Analyze Traffic
+
+Use Wireshark on the Windows VM to monitor and capture network traffic. Test connectivity between VMs to analyze the effects of NSG rules.
+- Adjust NSG Rules and Document Observations
+
+Modify NSG rules to allow or block specific traffic, observe the impact, and document findings.
 
 <h2>Actions and Observations</h2>
 
@@ -36,7 +44,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set Up Azure Virtual Machines
+
+Create two VMs in the same virtual network: one running Windows 10 and the other running Ubuntu Server 20.04.
+Configure Network Security Groups (NSGs)
+
+Navigate to the Azure portal and create an NSG.
+Define inbound and outbound security rules to control traffic flow. For example, allow RDP (port 3389) for Windows and SSH (port 22) for Ubuntu.
 </p>
 <br />
 
@@ -44,7 +58,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Wireshark on the Windows VM
+
+Download and install Wireshark on the Windows VM to monitor network traffic.
+Capture Network Traffic
+
+Use Wireshark to capture traffic on the Windows VM.
+Initiate various network communications (e.g., ping, SSH, HTTP) between the two VMs and observe the captured packets.
 </p>
 <br />
 
@@ -52,6 +72,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Analyze Traffic Based on NSG Rules
+
+Modify NSG rules to allow or deny specific traffic types.
+Observe how changes in NSG rules affect the network traffic captured by Wireshark.
+Document Observations
+
+Record the impact of different NSG configurations on network traffic.
+Note any unexpected behaviors or insights gained during the analysis.
 </p>
 <br />
